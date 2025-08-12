@@ -1,4 +1,4 @@
-# Style_annotation_prod
+# Style_Annotation_Productionization
 
 The script applies LLM to automate furniture style annotation.  
 Given a furniture piece, the script can judge whether another furniture piece is stylistically compatible with it.  
@@ -13,4 +13,4 @@ You can change the mode argument in the `config.yaml` file.
 
 
  
-# Style_Annotation_Productionization
+
