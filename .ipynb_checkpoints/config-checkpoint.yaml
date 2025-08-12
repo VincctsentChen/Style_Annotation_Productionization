@@ -1,0 +1,33 @@
+# config.yaml. In terminal, after finish editing yaml file, press 'esc' to end, then press "shift + :", the press ":wq" to withdraw
+service:
+  base_url: "http://kube-catalog-service-api.service.intraiad1.consul.csnzoo.com"
+  auth: "/api/v1/Authentication/getWfAuthToken"
+  graphql: "/api/v1/GraphQL"
+  brand_catalog_id: 1
+
+inputs:
+  # directory containing your per-room .xlsx files
+  data_dir: "/home/jupyter/Style_annotation_prod/Data/Input_Files/Extra_Test"
+  # the few-shot examples CSV you generated
+  examples_csv_path: "/home/jupyter/Style_annotation_prod/Data/Example_Files/Style_Compatibility_Examples.csv"
+
+outputs:
+  # where the annotated CSVs will be written
+  results_dir: "/home/jupyter/Style_annotation_prod/Annotation_results"
+  # optional: override folder for confusion matrices; if omitted, script will use <results_dir>/Confusion_Matrix
+  confusion_matrix_dir: "/home/jupyter/Style_annotation_prod/Annotation_results/Confusion_Matrix"
+
+gemini:
+  # which Gemini model to use
+  model_name: "gemini-2.5-pro"
+
+# list of rooms (your script will look for <room>_1.xlsx and sheet name "<room>_1")
+rooms:
+  - bathroom
+  - kitchen
+  - bedroom
+  - dining_room
+  
+run:
+  # default mode if not passed via --mode; one of "compare" or "evaluate"
+  mode: "evaluate"
