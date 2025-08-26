@@ -1,6 +1,6 @@
 # Style_Annotation_Productionization
 
-The script applies LLM to automate furniture style annotation.  
+The script applies LLM (Gemini) to automate furniture style annotation.  
 Given a furniture piece, the script can judge whether another furniture piece is stylistically compatible with it.  
 The master script is 'StyleAnnotation_four_rooms_Gemeni.py'. 
 ## Getting Started
