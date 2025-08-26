@@ -16,7 +16,7 @@ This work is detailed in my Wayfair Tech Blog article:
 ## Getting Started
 The master script is 'StyleAnnotation_four_rooms_Gemeni.py'.  
 1. **Clone** the repo and enter the project directory.
-3. **Run the master script**:
+2. **Run the master script**:
    ```bash
    python StyleAnnotation_four_rooms_Gemeni.py --config config.yaml
 
@@ -28,15 +28,15 @@ The master script is 'StyleAnnotation_four_rooms_Gemeni.py'.
 You can change the mode argument in the `config.yaml` file.
 
 ## Repository Structure  
-StyleAnnotation_four_rooms_Gemeni.py — main entry point for the pipeline.  
-config.yaml — configuration file for mode, dataset paths, and model parameters.  
-data/ — contains input product metadata and style-pair datasets (not included).  
-outputs/ — stores generated annotations and evaluation results.  
+- StyleAnnotation_four_rooms_Gemeni.py — main entry point for the pipeline.  
+- config.yaml — configuration file for mode, dataset paths, and model parameters.  
+- data/ — contains input product metadata and style-pair datasets (not included).  
+- outputs/ — stores generated annotations and evaluation results.  
 
 ## Tech Stack  
-LLM: Gemini on Google Cloud Vertex AI  
-Storage & Processing: Google Cloud Storage + BigQuery  
-Evaluation: Human-labeled expert dataset for benchmarking
+- LLM: Gemini on Google Cloud Vertex AI  
+- Storage & Processing: Google Cloud Storage + BigQuery  
+- Evaluation: Human-labeled expert dataset for benchmarking
 
 
  
