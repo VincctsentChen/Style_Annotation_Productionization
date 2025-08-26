@@ -27,6 +27,17 @@ The master script is 'StyleAnnotation_four_rooms_Gemeni.py'.
 
 You can change the mode argument in the `config.yaml` file.
 
+## Repository Structure  
+StyleAnnotation_four_rooms_Gemeni.py — main entry point for the pipeline.  
+config.yaml — configuration file for mode, dataset paths, and model parameters.  
+data/ — contains input product metadata and style-pair datasets (not included).  
+outputs/ — stores generated annotations and evaluation results.  
+
+## Tech Stack  
+LLM: Gemini on Google Cloud Vertex AI  
+Storage & Processing: Google Cloud Storage + BigQuery  
+Evaluation: Human-labeled expert dataset for benchmarking
+
 
  
 
