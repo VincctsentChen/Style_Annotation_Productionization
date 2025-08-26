@@ -5,7 +5,7 @@ developed during my internship as a Machine Learning Scientist at Wayfair.
 
 The system applies **Gemini** (Google Cloud Vertex AI) to automatically annotate furniture 
 styles and determine whether two pieces are **stylistically compatible** 
-(i.e., whether they “fit together” in the same room). Applying LLMs for labeling offers an advantage over traditional ML by eliminating the need for manual feature engineering. 
+(i.e., whether they “fit together” in the same room). Applying LLMs for labeling offers an advantage over traditional ML by eliminating the need for manual feature engineering.   
 Once finalized, the LLM agent can automatically label style compatibility, greatly reducing reliance on human annotators and saving both time and cost.
 
 This work is detailed in my Wayfair Tech Blog article:  
