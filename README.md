@@ -2,7 +2,12 @@
 
 The script applies LLM to automate furniture style annotation.  
 Given a furniture piece, the script can judge whether another furniture piece is stylistically compatible with it.  
-To run the script 'StyleAnnotation_four_rooms_Gemeni.py', type 'python StyleAnnotation_four_rooms_Gemeni.py --config config.yaml' in the terminal.  
+The master script is 'StyleAnnotation_four_rooms_Gemeni.py'. 
+## Getting Started
+1. **Clone** the repo and enter the project directory.
+3. **Run the master script**:
+   ```bash
+   python StyleAnnotation_four_rooms_Gemeni.py --config config.yaml
 
 
 ## Modes
